@@ -15,11 +15,7 @@
 
 ## 2. Dependency direction
 
-```
-apps/*  ->  packages/*
-packages/doc   ->  packages/core
-packages/code  ->  packages/core
-```
+
 
 - `packages/core` imports nothing from `doc`, `code` or `apps`.
 - `doc` and `code` never import each other's internals; a shared need moves to `core`.
